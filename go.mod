@@ -1,3 +1,3 @@
-module data-structures-go
+module dsa-go
 
 go 1.17

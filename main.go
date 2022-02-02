@@ -1,7 +1,7 @@
 package main
 
 import (
-	"data-structures-go/linked_list"
+	"dsa-go/linked_list"
 )
 
 func main() {
