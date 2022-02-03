@@ -7,6 +7,6 @@ import (
 
 func main() {
 	nums := []int{1, 2, 7, 14, 42, 22, 9, 15}
-	algorithms.InsertionSort(nums)
+	nums = algorithms.MergeSort(nums)
 	fmt.Println(nums)
 }
