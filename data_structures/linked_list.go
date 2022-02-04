@@ -1,4 +1,4 @@
-package linked_list
+package data_structures
 
 import (
 	"fmt"

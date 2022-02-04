@@ -1,17 +1,17 @@
-package tree
+package data_structures
 
-type Node struct {
+type TreeNode struct {
 	value int
-	left	*Node
-	right *Node
+	left	*TreeNode
+	right *TreeNode
 }
 
 type BST struct {
-	root	*Node
+	root	*TreeNode
 }
 
 func (tree *BST) Insert(value int) {
-	newNode := &Node {
+	newNode := &TreeNode {
 		value: value,
 		left: nil,
 		right: nil,
@@ -41,7 +41,7 @@ func (tree *BST) Insert(value int) {
 	}
 }
 
-func (tree *BST) Lookup(value int) *Node {
+func (tree *BST) Lookup(value int) *TreeNode {
 	node := tree.root;
 
 	for node != nil && node.value != value {
@@ -57,7 +57,7 @@ func (tree *BST) Lookup(value int) *Node {
 
 func (tree *BST) Remove(value int) {
 	node := tree.root;
-	var parent *Node;
+	var parent *TreeNode;
 	// find the node while keeping track of the parent
 	for node != nil {
 		if value > node.value {
